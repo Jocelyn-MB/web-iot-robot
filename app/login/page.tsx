@@ -14,8 +14,8 @@ export default function SignIn() {
       await auth.signInWithEmailAndPassword(email, password);
       // Inicio de sesión exitoso, redirigir al usuario a la página de inicio
       window.location.href = '/'; // Redirigir al usuario a la página de inicio
-    } catch (error) {
-      setError(error.message);
+    } catch {
+      
     }
   };
 
