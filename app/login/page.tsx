@@ -16,9 +16,9 @@ export default function SignIn() {
       window.location.href = '/';
     } catch (error) {
       if (error instanceof Error) {
-        console.error('Error de inicio de sesión:', error.message);
+        console.error('Error de inicio de sesión:', error.message.replace(/'/g, '&apos;'));
       } else {
-        console.error('Error de inicio de sesión:', error);
+        console.error('Error de inicio de sesión:', error.toString().replace(/'/g, '&apos;'));
       }
     }
   };
