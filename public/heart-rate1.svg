@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="209.55mm"
+   height="210.34375mm"
+   viewBox="0 0 23.76 23.85"
+   fill="none"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="heart-rate1.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.9975"
+     inkscape:cx="391.97995"
+     inkscape:cy="387.96992"
+     inkscape:window-width="1920"
+     inkscape:window-height="1002"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     inkscape:document-units="mm" />
+  <path
+     d="m 22.444221,8.4945597 c 0.04054,-1.5106336 -0.515729,-3.0342835 -1.668562,-4.187199 -2.22764,-2.2275928 -5.839265,-2.2275928 -8.066905,0 L 11.902121,5.1140396 11.09549,4.3073607 c -2.2276405,-2.2275928 -5.8392897,-2.2275928 -8.0668827,0 -2.22759311,2.227593 -2.22759311,5.8392423 0,8.0668823 l 8.8735137,8.873421 2.218385,-2.218385"
+     stroke="#000000"
+     stroke-width="2.34316"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path1"
+     style="fill:none;fill-opacity:1;stroke:#93c5fd;stroke-opacity:1;stroke-width:0.6;stroke-dasharray:none" />
+  <path
+     d="m 8.387385,12.772831 h 3.124249 l 2.343158,-3.1242497 2.343157,6.2483817 2.343158,-3.124132 h 3.905223"
+     stroke="#000000"
+     stroke-width="2.34316"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path2"
+     style="fill:#93c5fd;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;stroke-width:0.6;stroke-dasharray:none" />
+</svg>
