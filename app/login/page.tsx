@@ -1,24 +1,25 @@
-"use client";
-
+"use client"
 import firebase, { auth } from '../utils/firebase';
 import React, { useState } from 'react';
 import Link from 'next/link';
 
 export default function SignIn() {
-
-
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
 
-  const handleLogin = async (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       await auth.signInWithEmailAndPassword(email, password);
-      // Inicio de sesión exitoso, puedes redirigir al usuario a otra página
+      // Inicio de sesión exitoso, redirigir al usuario a la página de inicio
       window.location.href = '/';
-    } catch (error: any) { // Especifica el tipo como 'any'
-      console.error('Error de inicio de sesión:', error);
+    } catch (error) {
+      if (error instanceof Error) {
+        console.error('Error de inicio de sesión:', error.message);
+      } else {
+        console.error('Error de inicio de sesión:', error);
+      }
     }
   };
 
@@ -81,12 +82,12 @@ export default function SignIn() {
                 </div>
               </div>
             </form>
-            <div className="text-gray-600 text-center mt-6">Do not you have an account? <Link href="/signup" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign up</Link>
+            <div className="text-gray-600 text-center mt-6">Don't have an account? <Link href="/signup" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign up</Link>
             </div>
           </div>
 
         </div>
       </div>
     </section>
-  )
+  );
 }
