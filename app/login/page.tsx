@@ -13,13 +13,9 @@ export default function SignIn() {
     try {
       await auth.signInWithEmailAndPassword(email, password);
       // Inicio de sesión exitoso, redirigir al usuario a la página de inicio
-      window.location.href = '/';
+      window.location.href = '/'; // Redirigir al usuario a la página de inicio
     } catch (error) {
-      if (error instanceof Error) {
-        console.error('Error de inicio de sesión:', error.message.replace(/'/g, '&apos;'));
-      } else {
-        console.error('Error de inicio de sesión:', error.toString().replace(/'/g, '&apos;'));
-      }
+      setError(error.message);
     }
   };
 
