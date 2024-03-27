@@ -11,14 +11,14 @@ export default function SignIn() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
 
-  const handleLogin = async (e) => {
+  const handleLogin = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     try {
       await auth.signInWithEmailAndPassword(email, password);
       // Inicio de sesión exitoso, puedes redirigir al usuario a otra página
       window.location.href = '/';
-    } catch (error) {
-      setError(error.message);
+    } catch (error: any) { // Especifica el tipo como 'any'
+      console.error('Error de inicio de sesión:', error);
     }
   };
 
