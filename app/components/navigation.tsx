@@ -41,19 +41,21 @@ export default function Header() {
                 <Link href="/login" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
               </li>
               <li>
-                <Link href="/signup" className="btn-sm text-gray-600hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
+                <Link href="/signup" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
                   Sign up
                 </Link>
               </li>
               <li>
                 <Link href="/contacto" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Contacto</Link>
               </li>
+              <li>
+                <Link href="/dashboard" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Dashboard</Link>
+              </li>
+              <li>
+                <Link href="/grafico" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Dashboard</Link>
+              </li>
             </ul>
-
           </nav>
-
-          <MobileMenu />
-
         </div>
       </div>
     </header>

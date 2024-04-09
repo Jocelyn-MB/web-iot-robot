@@ -1,5 +1,5 @@
 export const metadata = {
-    title: 'Sign Up - Simple',
+    title: 'Sign Up -',
     description: 'Page description',
   }
   
@@ -50,7 +50,7 @@ export const metadata = {
               </div>
               
               <div className="text-gray-600 text-center mt-6">
-                Already using Simple? <Link href="/signin" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign in</Link>
+                Already using Simple? <Link href="/login" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign in</Link>
               </div>
             </div>
   
