@@ -12,7 +12,7 @@ export function useSensorData() {
         const intervalo = 5000;
 
     // Llama a updateFirebase con el intervalo especificado
-    updateFirebase(intervalo);// Llama a updateFirebase sin el argumento del intervalo
+    //updateFirebase(intervalo);// Llama a updateFirebase sin el argumento del intervalo
     
         const fetchData = () => {
             const dbRef = ref(database, 'DHT_112'); // Cambia 'DHT_112' al nodo de tu base de datos que contiene los datos del sensor
