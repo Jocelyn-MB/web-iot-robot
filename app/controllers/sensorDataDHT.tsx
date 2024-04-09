@@ -9,7 +9,7 @@ export function useSensorData() {
     const [sensorData, setSensorData] = useState({ temperatura: 0, humidity: 0 });
     
     useEffect(() => {
-        const intervalo = 5000;
+        // const intervalo = 5000;
 
     // Llama a updateFirebase con el intervalo especificado
     //updateFirebase(intervalo);// Llama a updateFirebase sin el argumento del intervalo
