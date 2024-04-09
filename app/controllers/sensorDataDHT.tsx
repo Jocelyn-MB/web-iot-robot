@@ -3,7 +3,7 @@
 import {get,ref,onValue} from 'firebase/database';
 import { useEffect,useState } from 'react';
 import {database} from '../controllers/database';
-import { updateFirebase } from '../utils/linten';
+//import { updateFirebase } from '../utils/linten';
 
 export function useSensorData() {
     const [sensorData, setSensorData] = useState({ temperatura: 0, humidity: 0 });
