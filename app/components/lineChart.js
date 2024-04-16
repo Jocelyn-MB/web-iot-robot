@@ -19,7 +19,7 @@ export default function GraphComponent() {
         data: {
           labels: [],
           datasets: [{
-            label: 'Humidity %',
+            label: 'Humo %',
             data: [],
             fill: false,
             borderColor: 'rgb(51, 104, 255)',
@@ -36,15 +36,31 @@ export default function GraphComponent() {
         }
       });
       // Escucha los cambios en la base de datos de Firebase
-      const sensorRef = ref(database, 'DHT_112');
-      onValue(sensorRef, (snapshot) => {
-        const data = snapshot.val();
-        if (data && data.hasOwnProperty('humidity')) {
-            const humidity = data['humidity'];
-            const hour = getCurrentHour();
-          addDataToChart(chartRef.current, hour, humidity);
-        }
-      });
+
+      const sensorRef = ref(database, 'data');
+onValue(sensorRef, (snapshot) => {
+  const data = snapshot.val();
+  for (const key in data) {
+    if (data.hasOwnProperty(key)) {
+      const entryNumber = parseInt(key.split('_')[1]);
+      if (entryNumber >= 0 && entryNumber <= 1000) {
+        const humidity = data[key];
+        const hour = getCurrentHour();
+        addDataToChart(chartRef.current, hour, humidity);
+      }
+    }
+  }
+});
+      // const sensorRef = ref(database, 'data');
+      // onValue(sensorRef, (snapshot) => {
+      //   const data = snapshot.val();
+      //   if (data && data.hasOwnProperty('entry_0')) {
+      //       const humidity = data['antry_0'];
+      //       const hour = getCurrentHour();
+      //     addDataToChart(chartRef.current, hour, humidity);
+      //   }
+      // });
+      
       // Función para agregar datos al gráfico
       function addDataToChart(chart, label, data) {
         chart.data.labels.push(label);

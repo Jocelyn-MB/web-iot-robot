@@ -17,11 +17,11 @@ export default function QuoteSection() {
           <div className="max-w-lg"> {/* Estableciendo un ancho máximo para el contenido de texto */}
             <blockquote className="mb-11">
               <div className="font-novoApply styles_richtext__vtvls styles_quote__block__aHUoR">
-                <h2>Reconocemos que la salud de las personas y la salud de nuestro planeta están entrelazadas y estamos decididos a desempeñar nuestro papel para asegurar un futuro más sostenible.</h2>
+                <h2>Este proyecto desarrolla un Robot Automatizado con tecnología IoT y sensores para abordar los desafíos del envejecimiento de la población. Ofrece monitoreo continuo de las condiciones ambientales y la frecuencia cardíaca de adultos mayores en sus hogares, con alertas ante posibles emergencias.</h2>
               </div>
             </blockquote>
-            <p className="text-dark font-novoApply text-body">Kasim Kutay</p>
-            <p className="text-dark font-novoApply text-body">Director ejecutivo, Novo Holdings</p>
+            <p className="text-dark font-novoApply text-body"></p>
+            <p className="text-dark font-novoApply text-body"></p>
           </div>
         </div>
       </div>

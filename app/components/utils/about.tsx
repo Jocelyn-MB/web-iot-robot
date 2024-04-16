@@ -32,7 +32,7 @@ export default function FeaturesBlocks() {
               </div>
 
                 <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Sensor de Temperatura</h4>
-                <p className="text-gray-600 text-center">El sensor de temperatura permitirá al robot monitorear la temperatura ambiente y detectar cambios significativos que podrían indicar riesgos para la salud o condiciones ambientales adversas.</p>
+                <p className="text-gray-600 text-center">El sensor de temperatura permite al robot monitorear la temperatura ambiente y detectar cambios que podrían indicar riesgos para la salud o condiciones adversas.</p>
               </div>
   
               {/* 2nd item */}
@@ -41,7 +41,7 @@ export default function FeaturesBlocks() {
                <Humedad width="64" height="64" className="text-white" style={{ position: 'relative', left: '5px', top: '0' }} />
               </div>
                 <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Sensor de Humedad</h4>
-                <p className="text-gray-600 text-center">El sensor de humedad proporcionará información sobre los niveles de humedad en el entorno del usuario, lo que puede ser crucial para prevenir problemas respiratorios o daños a la propiedad.</p>
+                <p className="text-gray-600 text-center">El sensor de humedad proveerá datos sobre los niveles de humedad en el entorno del usuario, lo cual es esencial para prevenir problemas respiratorios y daños a la propiedad.</p>
               </div>
   
               {/* 3rd item */}
@@ -59,7 +59,7 @@ export default function FeaturesBlocks() {
                <FrecuenciaCardiaca width="64" height="64" className="text-white"  />
               </div>
                 <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Sensor de Pulso Cardíaco</h4>
-                <p className="text-gray-600 text-center">El sensor de pulso cardíaco medirá la frecuencia cardíaca del usuario, lo que proporcionará información valiosa sobre su salud cardiovascular y ayudará a detectar posibles emergencias médicas.</p>
+                <p className="text-gray-600 text-center">El sensor de pulso cardíaco medirá la frecuencia cardíaca del usuario, proporcionando información sobre su salud cardiovascular y ayudando a detectar emergencias médicas.</p>
               </div>
   
               {/* 5th item */}
@@ -68,7 +68,7 @@ export default function FeaturesBlocks() {
                <Colision width="64" height="64" className="text-white"  />
               </div>
                 <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Tecnología Anti Colisiones</h4>
-                <p className="text-gray-600 text-center">El robot está equipado con tecnología anti colisiones y anticaídas para detectar obstáculos y el borde de superficies, evitando tanto colisiones como caídas, lo que garantiza una navegación segura.</p>
+                <p className="text-gray-600 text-center">El robot cuenta con tecnología anti colisiones para detectar obstáculos, asegurando una navegación segura y protegiendo al robot, objetos y personas cercanas.</p>
               </div>
   
               {/* 6th item */}
@@ -77,7 +77,7 @@ export default function FeaturesBlocks() {
                <Mobil width="40" height="40" style={{ position: 'relative', left: '3px' }} />
               </div>
                 <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Aplicación Móvil Android</h4>
-                <p className="text-gray-600 text-center">El robot cuenta con una aplicación móvil Android que permite a los usuarios interactuar con él de manera remota, monitorear los datos de los sensores en tiempo real y recibir notificaciones sobre eventos importantes.</p>
+                <p className="text-gray-600 text-center">El robot tiene una aplicación móvil Android para la interacción remota, el monitoreo en tiempo real de los sensores y la recepción de notificaciones sobre eventos.</p>
               </div>
   
             </div>

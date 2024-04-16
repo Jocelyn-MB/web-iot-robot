@@ -4,8 +4,7 @@ import { useState, useEffect } from 'react'
 
 import Link from 'next/link'
 import Logo from './logo'
-// import Dropdown from '@/components/utils/dropdown'
-import MobileMenu from './mobile-menu'
+
 
 export default function Header() {
 
@@ -27,7 +26,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
 
-          {/* Site branding */}
+          {/* Logo*/}
           <div className="shrink-0 mr-4">
             <Logo />
           </div>
@@ -38,21 +37,10 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
             
               <li>
-                <Link href="/login" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
+                <Link href="/login" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Acceso</Link>
               </li>
               <li>
-                <Link href="/signup" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
-                  Sign up
-                </Link>
-              </li>
-              <li>
-                <Link href="/contacto" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Contacto</Link>
-              </li>
-              <li>
-                <Link href="/dashboard" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Dashboard</Link>
-              </li>
-              <li>
-                <Link href="/grafico" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Dashboard</Link>
+                <Link href="/about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Acerca De</Link>
               </li>
             </ul>
           </nav>

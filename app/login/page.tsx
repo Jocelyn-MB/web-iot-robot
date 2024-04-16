@@ -15,7 +15,7 @@ export default function SignIn() {
     try {
       await auth.signInWithEmailAndPassword(email, password);
       // Inicio de sesión exitoso, redirigir al usuario a la página de inicio
-      window.location.href = '/'; // Redirigir al usuario a la página de inicio
+      window.location.href = '/dashboard'; // Redirigir al usuario a la página de inicio
     } catch {
       
     }
@@ -28,7 +28,7 @@ export default function SignIn() {
 
           {/* Page header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h1 className="h1">Welcome back. We exist to make entrepreneurism easier.</h1>
+            <h1 className="h1">¡Bienvenido de nuevo!</h1>
           </div>
 
           {/* Form */}
@@ -80,8 +80,8 @@ export default function SignIn() {
                 </div>
               </div>
             </form>
-            <div className="text-gray-600 text-center mt-6">Don't have an account? <Link href="/signup" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign up</Link>
-            </div>
+            {/* <div className="text-gray-600 text-center mt-6">Don't have an account? <Link href="/signup" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign up</Link>
+            </div> */}
           </div>
 
         </div>
